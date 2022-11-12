@@ -6,104 +6,160 @@
 \begin{document}
 
 \sidebar{sideBarColor!25}
-\simpleheader{titleBackColor}{Luca}{Olivieri}{Software Developer}{white}
+\SimpleHeader{titleBackColor}{Luca}{Olivieri}{Software Developer}{white}
 
 % Side bar
 \vspace*{3.49cm} % start 8 cm from the top of the page}
-    \adjustbox{valign=t}{
-    \begin{minipage}{7.3cm} % large 7.3 cm from the top
-    \vspace*{1.2cm} % text starts 1cm under the top of the minipage
-        % Picture
-        \begin{center}
-        \begin{tikzpicture}
-            \node[
-            circle,
-            minimum size=\cvPictureWidth,
-            path picture={
-            \node at (path picture bounding box.center){
-             \includegraphics[width=\cvPictureWidth]{Picture.jpg}
-             };
-             }]
-            {};
-        \end{tikzpicture}
-        \end{center}
-        % In brief
-        \ruleline{\textbf{In brief}}
-	    Ciao
-        % Contact
-        \ruleline{\textbf{Contact}}
-        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
-        \matrix [
-        column 1/.style={anchor=center,contactIcon},
-        column 2/.style={anchor=west,align=left,contactIcon},
-        column sep=5pt,
-        row sep=5pt] (contact) {
-        \node{\faEnvelope}; 
-         & \node{\href{mailto:olivieri.luca@outlook.com}{olivieri.luca@outlook.com}};\\
-        \node{\faPhone}; 
-         & \node{+39 349 28 99 132};\\ 
-        \node{\faMapMarker}; 
-        & \node{Rupinaro \\ 16043 Chiavari (GE), Italy};\\
-        \node{\faLinkedinSquare}; 
-        & \node{\href{https://www.linkedin.com/in/luca-olivieri-00714684/}{LinkedIn}};\\
-        \node{\faInstagram}; 
-        & \node{\href{https://www.instagram.com/olimexsmart/}{Instagram: @olimexsmart}};\\
-        \node{\faGithub}; 
-        & \node{\href{https://github.com/olimexsmart}{GitHub: @olimexsmart}};\\
-        \node{\faCar};
-        & \node{Driving License A and B};\\
-         };
-        \end{tikzpicture} 
-        % Languages
-        \ruleline{\textbf{Languages}}
-        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
-        \matrix [
-        column 1/.style={anchor=center,contactIcon},
-        column 2/.style={anchor=west,align=left,contactIcon},
-        column sep=5pt,
-        row sep=5pt] (contact) {
-        \node{\flag{Italy.png}};
-        & \node{Italian - Native Language};\\
-        \node{\flag{England.png}};
-        & \node{English - Professional Knowledge};\\
-        \node{\flag{CzechRep.png}};
-        & \node{Czech - Basic Knowledge};\\
-        };
-        \end{tikzpicture} 
-        % QR Code
-        \begin{center}
-            \includegraphics[width=3.5cm]{QR_Info.png}
-        \end{center}
-        
-    \end{minipage}} %
-    \hfill 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
-    \adjustbox{valign=t}{\begin{minipage}{11.4cm}
-        \vspace*{1cm}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Work Experience
-        \section*{{\faSuitcase} WORK EXPERIENCE}
-        
-        \MySectionNoPic{2018-Today}{Captain of the Black Pearl}{Tortuga, Caribbean}{Your Company}{Found a secret treasure, lost the ship. \lipsum[12]}  
-        
-        \vspace*{0.22cm}
-        
-        \MySectionNoPic{2010-2020}{Freelance Pirate}{Tortuga, Caribbean}{Buccaneering SPA}{\lipsum[24]}  
-        % Education
-        \section*{{\faGraduationCap} EDUCATION}
+\adjustbox{valign=t}{
+\begin{minipage}{7.3cm} % large 7.3 cm from the top
+\vspace*{1.2cm} % text starts 1cm under the top of the minipage
+	% Picture
+	\begin{center}
+	\begin{tikzpicture}
+		\node[
+		circle,
+		minimum size=\cvPictureWidth,
+		path picture={
+		\node at (path picture bounding box.center){
+			\includegraphics[width=\cvPictureWidth]{Picture.jpg}
+			};
+			}]
+		{};
+	\end{tikzpicture}
+	\end{center}
+	% In brief
+	\ruleline{\textbf{About me}}
+	I like to constantly challenge myself with learning new skills 
+	and with personal projects, not always tech-related. 
+	
+	My first interest is programming, while electronics is my second one, preferably digital than analog. 
 
-        \MySection{2018-Ongoing}{Ship.png}{Master Degree}{UNIGE}{Genoa, Italia}{Faculty}{A description of your piracy. \\\textbf{Degree: 110/110 cum laude}}
-            
-        \vspace*{0.22cm}
-            
-        \MySection{2016-2018}{Jolly-Roger.png}{Bachelor Degree}{Tortuga Academy}{East Indies}{Buccaneer}{Attacking and robbing ships at sea. \lipsum[150]\\\textbf{Degree: 110/110}}
-                
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Publications
+	My core value is to respect my work and the people I work with with.  
+	% Contact
+	\ruleline{\textbf{Contact}}
+	\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+	\matrix [
+	column 1/.style={anchor=center,contactIcon},
+	column 2/.style={anchor=west,align=left,contactIcon},
+	column sep=5pt,
+	row sep=5pt] (contact) {
+	\node{\faEnvelope}; 
+		& \node{\href{mailto:olivieri.luca@outlook.com}{olivieri.luca@outlook.com}};\\
+	\node{\faPhone}; 
+		& \node{+39 349 28 99 132};\\ 
+	\node{\faMapMarker}; 
+	& \node{Chiavari (GE), Italy};\\
+	\node{\faLinkedinSquare}; 
+	& \node{\href{https://www.linkedin.com/in/luca-olivieri-00714684/}{LinkedIn}};\\
+	\node{\faInstagram}; 
+	& \node{\href{https://www.instagram.com/olimexsmart/}{Instagram: @olimexsmart}};\\
+	\node{\faGithub}; 
+	& \node{\href{https://github.com/olimexsmart}{GitHub: @olimexsmart}};\\
+	\node{\faCar};
+	& \node{Driving License A and B};\\
+		};
+	\end{tikzpicture} 
+    % Professional Skills 
+    \ruleline{\textbf{Skills}}
+    \begin{center}
+        \cvtag{C}\cvtag{JS}\cvtag{Python}\cvtag{MatLab}\cvtag{C++}\cvtag{C\#}\cvtag{Git}
+		\cvtag{CAD (basic)}\cvtag{\LaTeX}
+    \end{center}
+	% Languages
+	\ruleline{\textbf{Languages}}
+	\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+	\matrix [
+	column 1/.style={anchor=center,contactIcon},
+	column 2/.style={anchor=west,align=left,contactIcon},
+	column sep=5pt,
+	row sep=5pt] (contact) {
+	\node{\flag{Italy.png}};
+	& \node{Italian - Native Language};\\
+	\node{\flag{England.png}};
+	& \node{English - Professional Knowledge};\\
+	\node{\flag{CzechRep.png}};
+	& \node{Czech - Basic Knowledge};\\
+	};
+	\end{tikzpicture} 
+	% QR Code
+	\begin{center}
+		\includegraphics[width=3.5cm]{QR_Info.png}
+	\end{center}
+\end{minipage}} %
+\hfill 
+% MAIN SECTION
+\adjustbox{valign=t}{\begin{minipage}{11.3cm}
+	% Work Experience
+	\vspace*{1cm}
+	\section*{{\faSuitcase} WORK EXPERIENCE}
+	\MySectionNoPic{2021-2022}{Embedded System Developer}{Chiavari, Italia}{Hi-Lex Italy}
+	{
+		Microcontroller C programming for automotive and assembly line applications.
+		Core developer for Jeep Avenger (J516) window lifter project.
+		Development from the ground up of a desktop application in ElectronJS for debugging based on UART. 
+		Kicked off Hardware-In-The-Loop testing with Robot Framework (Python). 
+		Creation of automated signal generation and testing with MatLab and Simulink. 
+		Re-organized Git workflow and setup of an on-premise GitLab instance running on Docker. 
+		Assistance in electronic design. 
+		Interfacing with MCU supplier on a day-to-day basis.
+	}  
 
-            
-    \end{minipage}} %
+	\vspace*{0.22cm}
+	\MySectionNoPic{2020-2021}{High School Teacher}{Sestri Levante}{Natta DeAmbrosis}
+	{
+		Programming, Electronics, IT
+	}  
+
+	\vspace*{0.22cm}
+	\MySectionNoPic{2019-2020}{PhD in Legged Locomotion}{Trento}{University of Trento}
+	{
+		High performance C++ linear algebra. Optimization techniques. 
+		Publications: \textit{"Fast and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts"}. 
+		Teaching assistant in bachelor C++ programming courses. PhD interrupted at start of second year.
+	}
+
+	\vspace*{0.22cm}
+	\MySectionNoPic{2019}{Full Stack Web Developer}{Genoa}{Deloitte}
+	{
+		Business to Business Internet of Things, both industrial and connected products. 
+		Mainly back-end in Java Spring-Boot, building microservices in Cloud Foundry. 
+		Front-end with Angular. 
+	} 
+
+	\vspace*{0.22cm}
+	\MySectionNoPic{2017}{Backend Developer}{Chiavari}{Mainsim}
+	{
+		Paid internship. Full stack web developing, database and system management. 
+		One-page application in jQuery, PHP and MySQL. Both Windows and Unix servers.
+	}	
+
+	% Education
+	\section*{{\faGraduationCap} EDUCATION}
+
+	\MySectionNoPic{2016-2018}{Master's Robotics Engineering}{Genoa}{University of Genoa}
+	{
+		Real-Time, concurrent and embedded programming. 	
+		Modelling and control of robotic platforms, Machine Learning, Artificial Intelligence, 
+		Computer Vision, ROS, POSIX. 
+
+		Thesis: \emph{"Hybrid indoor localization for industrial AGVs".}
+
+		Development from the ground-up of a segmentation algorithm and an Extended Kalman Filter 
+		for an indoor localization system based on a laser scanner sensor. 
+		Development in C++ in a Unix environment.
+	}
+		
+	\vspace*{0.22cm}
+	\MySectionNoPic{2016-2018}{Bachelor's Electronics Engineering and Information Technology}{Genoa}{University of Genoa}
+	{
+		Programming, Control Systems, Telecommunication Systems, Digital and Analog Electronics.
+		
+		Thesis: \emph{"Source Contact Graph Routing on a Nanosat network".} 
+
+		Formulation of an a-priori routing algorithm for a satellite network. 
+		C++ with NS3 network simulation package on Unix environment.
+	}
+\end{minipage}} %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Second Page

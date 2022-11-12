@@ -26,6 +26,7 @@
 \usepackage{smartdiagram}
 \usepackage{float}
 \usepackage{array}
+\usepackage{anyfontsize}
 \usetikzlibrary{decorations.text}
 \usetikzlibrary{fadings}
 \usetikzlibrary{calc}
@@ -79,18 +80,28 @@
 }
 
 % top box with simple header
-\newcommand{\simpleheader}[5]{
-\tikz[remember picture,overlay] {%
-\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
-\node[draw=none, align=left](name) at (header) {%
-{\Huge \color{#5} #2 \textbf{#3} }%
-};%
-\node[draw=none, below](description) at (name.south) {\color{white}#4};% 
-}\vspace{-0.7cm}%
+\newcommand{\SimpleHeader}[5]
+{
+    \tikz[remember picture,overlay] 
+    {
+        \node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north)
+        {
+
+        };
+        \node[draw=none, align=left](name) at (header) 
+        {
+            \fontsize{46}{50}\selectfont \color{#5} #2 \textbf{#3}
+        };
+        \node[draw=none, below](description) at (name.south) 
+        {
+            \color{white}#4
+        };
+    }
+    \vspace{-0.7cm}
 }
 
 % Command Example:
-% \simpleheader{titleBackColor}{Name}{Surname}{Job}{textColor}
+% \SimpleHeader{titleBackColor}{Name}{Surname}{Job}{textColor}
 
 % Next page header
 \newcommand{\newpageheader}[5]{
@@ -107,7 +118,7 @@
 % SideBar
 \newcommand{\sidebar}[1]{
 \tikz[remember picture,overlay] {%
-\node[rectangle, fill=#1, anchor=north west, minimum width=8.5cm, minimum height=\paperheight](header) at (current page.north west){};%
+\node[rectangle, fill=#1, anchor=north west, minimum width=8.6cm, minimum height=\paperheight](header) at (current page.north west){};%
 }\vspace{-0.7cm}%
 }
 
