@@ -21,7 +21,7 @@
 		minimum size=\cvPictureWidth,
 		path picture={
 		\node at (path picture bounding box.center){
-			\includegraphics[width=\cvPictureWidth]{Picture.jpg}
+			\includegraphics[width=\cvPictureWidth]{_MG_7487_crop1.JPG}
 			};
 			}]
 		{};
@@ -30,40 +30,41 @@
 	% In brief
 	\ruleline{\textbf{About me}}
 	I like to constantly challenge myself with learning new skills 
-	and with personal projects, not always tech-related. 
+	and with personal projects, tech-related or not. 
 	
-	My first interest is programming, while electronics is my second one, preferably digital than analog. 
+	Programming is my first interest, while electronics is the second one, 
+    preferably digital than analog. 
 
-	My core value is to respect my work and the people I work with with.  
+	My core value is respecting my work and the people I work with.  
 	% Contact
 	\ruleline{\textbf{Contact}}
 	\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
-	\matrix [
-	column 1/.style={anchor=center,contactIcon},
-	column 2/.style={anchor=west,align=left,contactIcon},
-	column sep=5pt,
-	row sep=5pt] (contact) {
-	\node{\faEnvelope}; 
-		& \node{\href{mailto:olivieri.luca@outlook.com}{olivieri.luca@outlook.com}};\\
-	\node{\faPhone}; 
-		& \node{+39 349 28 99 132};\\ 
-	\node{\faMapMarker}; 
-	& \node{Chiavari (GE), Italy};\\
-	\node{\faLinkedinSquare}; 
-	& \node{\href{https://www.linkedin.com/in/luca-olivieri-00714684/}{LinkedIn}};\\
-	\node{\faInstagram}; 
-	& \node{\href{https://www.instagram.com/olimexsmart/}{Instagram: @olimexsmart}};\\
-	\node{\faGithub}; 
-	& \node{\href{https://github.com/olimexsmart}{GitHub: @olimexsmart}};\\
-	\node{\faCar};
-	& \node{Driving License A and B};\\
-		};
-	\end{tikzpicture} 
+	\matrix 
+    [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt
+    ] (contact) {
+        \node{\faEnvelope}; & \node{\href{mailto:olivieri.luca@outlook.com}{olivieri.luca@outlook.com}};\\
+        \node{\faPhone}; & \node{+39 349 28 99 132};\\ 
+        \node{\faMapMarker}; & \node{Chiavari (GE), Italy};\\
+        \node{\faLinkedinSquare}; & \node{\href{https://www.linkedin.com/in/luca-olivieri-00714684/}{LinkedIn}};\\
+        \node{\faInstagram}; & \node{\href{https://www.instagram.com/olimexsmart/}{Instagram: @olimexsmart}};\\
+        \node{\faGithub}; & \node{\href{https://github.com/olimexsmart}{GitHub: @olimexsmart}};\\
+        \node{\faCar}; & \node{Driving License A and B};\\
+        \node{\faQrcode}; & \node{\href{https://olimexsmart.it}{olimexsmart.it}};\\
+	};
+	\end{tikzpicture}
+    % QR Code
+    \begin{center}
+        \qrcode[height=2.5cm]{https://olimexsmart.it} \\
+    \end{center} 
     % Professional Skills 
     \ruleline{\textbf{Skills}}
     \begin{center}
-        \cvtag{C}\cvtag{JS}\cvtag{Python}\cvtag{MatLab}\cvtag{C++}\cvtag{C\#}\cvtag{Git}
-		\cvtag{CAD (basic)}\cvtag{\LaTeX}
+        \cvTag{C}\cvTag{JS}\cvTag{Python}\cvTag{MatLab}\cvTag{C++}\cvTag{C\#}\cvTag{Git}
+		\cvTag{CAD (basic)}\cvTag{\LaTeX}
     \end{center}
 	% Languages
 	\ruleline{\textbf{Languages}}
@@ -81,18 +82,18 @@
 	& \node{Czech - Basic Knowledge};\\
 	};
 	\end{tikzpicture} 
-	% QR Code
-	\begin{center}
-		\includegraphics[width=3.5cm]{QR_Info.png}
-	\end{center}
+	% QR Code (custom)
+	% \begin{center}
+	% 	\includegraphics[width=3.5cm]{siteQR.png}
+	% \end{center}
 \end{minipage}} %
 \hfill 
 % MAIN SECTION
 \adjustbox{valign=t}{\begin{minipage}{11.3cm}
 	% Work Experience
 	\vspace*{1cm}
-	\section*{{\faSuitcase} WORK EXPERIENCE}
-	\MySectionNoPic{2021-2022}{Embedded System Developer}{Chiavari, Italia}{Hi-Lex Italy}
+	\section*{{\faSuitcase} Work}
+	\workSection{2021-2022}{Embedded System Developer}{Chiavari, Italia}{Hi-Lex Italy}
 	{
 		Microcontroller C programming for automotive and assembly line applications.
 		Core developer for Jeep Avenger (J516) window lifter project.
@@ -105,13 +106,13 @@
 	}  
 
 	\vspace*{0.22cm}
-	\MySectionNoPic{2020-2021}{High School Teacher}{Sestri Levante}{Natta DeAmbrosis}
+	\workSection{2020-2021}{High School Teacher}{Sestri Levante}{Natta DeAmbrosis}
 	{
 		Programming, Electronics, IT
 	}  
 
 	\vspace*{0.22cm}
-	\MySectionNoPic{2019-2020}{PhD in Legged Locomotion}{Trento}{University of Trento}
+	\workSection{2019-2020}{PhD in Legged Locomotion}{Trento}{University of Trento}
 	{
 		High performance C++ linear algebra. Optimization techniques. 
 		Publications: \textit{"Fast and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts"}. 
@@ -119,7 +120,7 @@
 	}
 
 	\vspace*{0.22cm}
-	\MySectionNoPic{2019}{Full Stack Web Developer}{Genoa}{Deloitte}
+	\workSection{2019}{Full Stack Web Developer}{Genoa}{Deloitte}
 	{
 		Business to Business Internet of Things, both industrial and connected products. 
 		Mainly back-end in Java Spring-Boot, building microservices in Cloud Foundry. 
@@ -127,16 +128,16 @@
 	} 
 
 	\vspace*{0.22cm}
-	\MySectionNoPic{2017}{Backend Developer}{Chiavari}{Mainsim}
+	\workSection{2017}{Backend Developer}{Chiavari}{Mainsim}
 	{
 		Paid internship. Full stack web developing, database and system management. 
 		One-page application in jQuery, PHP and MySQL. Both Windows and Unix servers.
 	}	
 
 	% Education
-	\section*{{\faGraduationCap} EDUCATION}
+	\section*{{\faGraduationCap} Education}
 
-	\MySectionNoPic{2016-2018}{Master's Robotics Engineering}{Genoa}{University of Genoa}
+	\workSection{2016-2018}{Master's Robotics Engineering}{Genoa}{University of Genoa}
 	{
 		Real-Time, concurrent and embedded programming. 	
 		Modelling and control of robotic platforms, Machine Learning, Artificial Intelligence, 
@@ -150,7 +151,8 @@
 	}
 		
 	\vspace*{0.22cm}
-	\MySectionNoPic{2016-2018}{Bachelor's Electronics Engineering and Information Technology}{Genoa}{University of Genoa}
+	\workSection{2016-2018}{Bachelor's Electronics Engineering and Information Technology}
+                                                    {Genoa}{University of Genoa}
 	{
 		Programming, Control Systems, Telecommunication Systems, Digital and Analog Electronics.
 		
@@ -161,80 +163,110 @@
 	}
 \end{minipage}} %
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Second Page
 \newpage
 
 \sidebar{sideBarColor!25}
-\newpageheader{titleBackColor}{Jack}{Sparrow}{Pirate \faLightbulbO \hspace{1mm} Captain}{white}
+\newpageheader{titleBackColor}{Luca}{Olivieri}{\faResistance \hspace{1mm} Software Developer}{white}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
-\adjustbox{valign=t}{%
-\begin{minipage}{7.3cm} 
-\vspace*{0.4cm} % text starts 0.4cm under the top the header
-
-
-        
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Skill and Strengths 
-    \ruleline{\textbf{Soft Skills and Strengths}}
-    \vspace*{-0.5cm}
-    \begin{center}
-        \cvtag{Creativity}\cvtag{Curiosity}\cvtag{Flexibility}\cvtag{Self Confidence}\cvtag{Ability to Plan and Organize} \cvtag{Autonomy}\cvtag{Adaptability} \cvtag{Eye for Details}\cvtag{Problem Solving}\cvtag{Team Working}\cvtag{Love Learning New Things}\cvtag{Leadership}\cvtag{Good Communication}\cvtag{Managing Information}\cvtag{Diplomacy}\cvtag{Good Listener}\cvtag{Patience}
-    \end{center}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Professional Skills 
-    \ruleline{\textbf{Professional Skills}}
-    \begin{center}
-        \cvtag{Skill 1}\cvtag{Skill 2}\cvtag{Skill 3}\cvtag{Skill 4}\cvtag{Skill 5}
-    \end{center}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Other Interests
-    \ruleline{\textbf{Other Interests}}
-    \small
-    \begin{multicols}{2}
-        \begin{itemize} 
-            \item  Guitar \flag{Guitar.png}
-            \item  Piano \flag{Piano.png}
-            \item  Chess \flag{Chess.png}
-            \item  Gym \flag{Gym.png}
-            \item  Travels \flag{Travels.png}
-            \item  Movies \flag{movie2.png}
-            \item  Books \flag{Books.png}
-    \end{itemize}
-    \end{multicols}
-
-     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % QR Code
-        \ruleline{\textbf{Download My CV}}
-        \scriptsize
-        \centering
-        Download my CV via the QR below \aiOverleaf.
+\adjustbox{valign=t}{
+    \begin{minipage}{7.3cm} 
+    \vspace*{0.4cm} 
+        % I'd like to learn
+        \ruleline{\textbf{I'd like to know more about}}
+        \vspace*{-0.5cm}
         \begin{center}
-            \quad
-            \qrcode[height=2cm]{
-                https://www.dropbox.com/sh/k5pheguf9jrur8x/AADpyjYJi7V5bhPyJeP3H74ea?dl=0} \\
-            \vspace*{0.5cm}
+            \cvTag{Flutter}\cvTag{Go}\cvTag{Qt}\cvTag{Embedded Linux}
+            \cvTag{Computer Vision} \cvTag{Machine Learning} \cvTag{Docker}
+            \cvTag{Power Electronics} \cvTag{Renewables} \cvTag{Advanced Networking}
         \end{center}
-
-\end{minipage}
-}%
+        % Other Interests
+        \ruleline{\textbf{Other Interests}}
+        \small
+        \begin{multicols}{2}
+            \begin{itemize} 
+                \item Photography
+                \item Furniture DIY
+                \item 3D printing
+                \item Motor Bikes
+                \item Soldering
+                \item Contemporary History 
+                \item Teaching
+        \end{itemize}
+        \end{multicols}
+    \end{minipage}
+}
 \hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%%%
 \adjustbox{valign=t}{%
 \begin{minipage}{11.3cm}
     \vspace*{0.4cm}
 
+    % Information Technology Skills
+    \section*{{\faDesktop} Personal Projects}
+    \personalProject{dumbPOS}
+    {
+        Most local culinary events have the need of a low cost 
+        and simple POS system. 
+        
+        I'm currently building a solution based on an off-the-shelve 
+        receipt printer, a Flask (Python) backend and Flutter frontend. 
+    }
+	
+    \vspace*{0.22cm}
+    \personalProject{Proselide\\ - a startup}
+    {
+        I challenged my self to launch an idea and start a business. 
+        
+        The problem I was trying to find a solution for was the monitoring 
+        of parking spaces, to avoid the pollution, traffic and general stress 
+        associated with looking for a parking spot. 
+        
+        From a technical point of view, the idea was based around a 
+        low cost camera sensor and computer vision.
+    }
+    
+    \vspace*{0.22cm}
+    \personalProject{Self Door Opener}
+    {
+        Embedded system connected to the Internet serving a login page. Upon a successful login, the front entrance of the building is opened. 
+        
+        This allows guest to enter by themselves or enables owners to simply 
+        enter without searching  for the key. Complete with an administrator page and logs. 
+        Home-built board.
+    }
+
+    \vspace*{0.22cm}
+    \personalProject{Boat Tracker}
+    {
+        A self-contained embedded system used to log the position of a boat through GPS. 
+        Data is sent to a server using GSM/GPRS communication. 
+        A comprehensive web page displays the paths logged on a map.
+    }
+
     \section*{{\aiOBP} About me}
-    Programming in general is my first interest, constantly challenging myself with new ideas and projects. My programming projects range from high level GUI application like an Android app (Olmaredo Stego) to embedded projects like an OBD2 telemetry interface for cars. Recently I've started to look into the Flutter framework, while at Hi-Lex I've been developing a fairly complex desktop application in Electron.
+    Programming in general is my first interest, constantly challenging myself with new ideas and projects. 
+    My programming projects range from high level GUI application like an Android app (Olmaredo Stego) 
+    to embedded projects like an OBD2 telemetry interface for cars. Recently I've started to look into 
+    the Flutter framework, while at Hi-Lex I've been developing a fairly complex desktop application 
+    in Electron.
     
-    Electronics is my second interest, preferably digital than analog. More in detail, I developed several complex Arduino projects and experimented with the STM32 microcontroller ecosystem. At Hi-Lex the core product is based on a Melexis MCU, very challenging both from the point of view of the resources available and the development environment.
+    Electronics is my second interest, preferably digital than analog. More in detail, I developed 
+    several complex Arduino projects and experimented with the STM32 microcontroller ecosystem. 
+    At Hi-Lex the core product is based on a Melexis MCU, very challenging both from the point 
+    of view of the resources available and the development environment.
     
-    During my internship at Mainsim I first learned about web developing, mainly back-end but a with a touch of front-end too. This new set of skills allowed me to dive into the IoT paradigm that was when the core focus of the work in Deloitte.
+    During my internship at Mainsim I first learned about web developing, mainly back-end but a with 
+    a touch of front-end too. This new set of skills allowed me to dive into the IoT paradigm that 
+    was when the core focus of the work in Deloitte.
     
-    While in my PhD experience, although not completed, thought me about complex algebraic computation in Python and C++, up to that point my coding was approached in a results ASAP approach. My recent experience in the automotive industry instead made me completely re-think my day-to-day work and the implications of my coding for the company, forcing me to focus instead on the solidity of the product, shifting to a writing less code but of high quality.
+    While in my PhD experience, although not completed, thought me about complex algebraic computation 
+    in Python and C++, up to that point my coding was approached in a results ASAP approach. 
+    My recent experience in the automotive industry instead made me completely re-think 
+    my day-to-day work and the implications of my coding for the company, forcing me to focus instead 
+    on the solidity of the product, shifting to a writing less code but of high quality.
     
     Finally, I try to keep my pragmatic approach fresh by 
 
@@ -249,105 +281,78 @@
     %  \end{itemize}
         
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    % Information Technology Skills
-    \section*{{\faDesktop} INFORMATION TECHNOLOGY SKILLS}
-    
-    \ITCcompetence{Data Analysis}{
-    \textbf{MATLAB}: \textit{Higly Specialized}\\
-    \textbf{Wolfram Mathematica}: \textit{Intermediate}\\
-    \textbf{Jupiter Notebook}: \textit{Intermediate}\\
-    }
-    
-    \vspace*{0.22cm}
 
-    \ITCcompetence{Modeling and Simulation}{
-    \textbf{Simulink} : \textit{Intermediate}  \\
-    \textbf{LTSpice}: \textit{Intermediate}
-    }
-    
-    \vspace*{0.22cm}
-
-    \ITCcompetence{Audio Processing}{
-    \textbf{Reaper} : \textit{Advanced}  \\
-    }
-
-    \vspace*{0.22cm}
-
-    \ITCcompetence{Office Automation}{
-    \textbf{MS Office (Excel, Word, PowerPoint)}: \textit{Higly Specialized}\\
-    \textbf{\LaTeX}: \textit{Advanced}\\
-    }
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Programming Languages
-    \section*{{\faCode} PROGRAMMING LANGUAGES}
-    \vspace*{-0.5cm}
-    \begin{multicols}{2}    
-    \begin{itemize}
-    \footnotesize
-        \item \textbf{Matlab}: Highly Specialised
-        \item \textbf{Python}: Advanced
-        \item \textbf{SQL}: Intermediate
-        \item \textbf{C/C++}: Intermediate
-        \item \textbf{Java}: Basic
-        \item[\vspace{\fill}]
-    \end{itemize}
-    \end{multicols}
+    % \section*{{\faCode} PROGRAMMING LANGUAGES}
+    % \vspace*{-0.5cm}
+    % \begin{multicols}{2}    
+    % \begin{itemize}
+    % \footnotesize
+    %     \item \textbf{Matlab}: Highly Specialised
+    %     \item \textbf{Python}: Advanced
+    %     \item \textbf{SQL}: Intermediate
+    %     \item \textbf{C/C++}: Intermediate
+    %     \item \textbf{Java}: Basic
+    %     \item[\vspace{\fill}]
+    % \end{itemize}
+    % \end{multicols}
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Certificates
-    \section*{{\faCertificate} CERTIFICATES}
+    % \section*{{\faCertificate} CERTIFICATES}
     
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
-    \begin{center}
-        \includegraphics[width=1.2cm]{IBM.png}
-    \end{center}
-    \end{minipage}}
-    \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{9cm}
-        \begin{itemize}
-            \scriptsize 
-            \item Python for Data Science, AI \& Development (\textit{Coursera, 2022})
-        \end{itemize}
-    \end{minipage}}
+    % \adjustbox{valign=t}{\begin{minipage}{2cm}
+    % \begin{center}
+    %     % \includegraphics[width=1.2cm]{IBM.png}
+    % \end{center}
+    % \end{minipage}}
+    % \hfill \vline \hfill
+    % \adjustbox{valign=t}{\begin{minipage}{9cm}
+    %     \begin{itemize}
+    %         \scriptsize 
+    %         \item Python for Data Science, AI \& Development (\textit{Coursera, 2022})
+    %     \end{itemize}
+    % \end{minipage}}
     
-    \vspace*{0.2cm}
+    % \vspace*{0.2cm}
     
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
-    \begin{center}
-        \includegraphics[width=2cm]{Matlab.png}
-    \end{center}
-    \end{minipage}}
-    \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{9cm}
-        \begin{itemize}
-            \scriptsize 
-            \item Pirate Processing with MATLAB (\textit{Mathworks, 2022})
-            \item Signal Processing with MATLAB (\textit{Mathworks, 2022})
-            \item Deep Learning with MATLAB (\textit{Mathworks, 2022})
-            \item Machine Learning with MATLAB (\textit{Mathworks, 2021})
-        \end{itemize}
-    \end{minipage}}
+    % \adjustbox{valign=t}{\begin{minipage}{2cm}
+    % \begin{center}
+    %     % \includegraphics[width=2cm]{Matlab.png}
+    % \end{center}
+    % \end{minipage}}
+    % \hfill \vline \hfill
+    % \adjustbox{valign=t}{\begin{minipage}{9cm}
+    %     \begin{itemize}
+    %         \scriptsize 
+    %         \item Pirate Processing with MATLAB (\textit{Mathworks, 2022})
+    %         \item Signal Processing with MATLAB (\textit{Mathworks, 2022})
+    %         \item Deep Learning with MATLAB (\textit{Mathworks, 2022})
+    %         \item Machine Learning with MATLAB (\textit{Mathworks, 2021})
+    %     \end{itemize}
+    % \end{minipage}}
     
-    \vspace*{0.2cm}
+    % \vspace*{0.2cm}
     
-    \adjustbox{valign=t}{\begin{minipage}{2cm}
-    \begin{center}
-        \includegraphics[width=1.2cm]{google.png}
-    \end{center}
-    \end{minipage}}
-    \hfill \vline \hfill
-    \adjustbox{valign=t}{\begin{minipage}{9cm}
-        \begin{itemize}
-            \scriptsize 
-            \item How to became a Web Pirate (\textit{Google Pirate School, 2022})
-            \item item 2
-            \item item 3
-            \item item 4
-        \end{itemize}
-    \end{minipage}}
+    % \adjustbox{valign=t}{\begin{minipage}{2cm}
+    % \begin{center}
+    %     % \includegraphics[width=1.2cm]{google.png}
+    % \end{center}
+    % \end{minipage}}
+    % \hfill \vline \hfill
+    % \adjustbox{valign=t}{\begin{minipage}{9cm}
+    %     \begin{itemize}
+    %         \scriptsize 
+    %         \item How to became a Web Pirate (\textit{Google Pirate School, 2022})
+    %         \item item 2
+    %         \item item 3
+    %         \item item 4
+    %     \end{itemize}
+    % \end{minipage}}
     
-    \vspace*{0.2cm}
+    % \vspace*{0.2cm}
     
 \end{minipage}}
 
