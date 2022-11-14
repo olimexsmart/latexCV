@@ -8,7 +8,7 @@
 \sidebar{sideBarColor!25}
 \SimpleHeader{titleBackColor}{Luca}{Olivieri}{Software Developer}{white}
 
-% Side bar
+% Sidebar 1
 \vspace*{3.49cm} % start 8 cm from the top of the page}
 \adjustbox{valign=t}{
 \begin{minipage}{7.3cm} % large 7.3 cm from the top
@@ -88,12 +88,12 @@
 	% \end{center}
 \end{minipage}} %
 \hfill 
-% MAIN SECTION
+% Main 1
 \adjustbox{valign=t}{\begin{minipage}{11.3cm}
 	% Work Experience
 	\vspace*{1cm}
 	\section*{{\faSuitcase} Work}
-	\workSection{2021-2022}{Embedded System Developer}{Chiavari, Italia}{Hi-Lex Italy}
+	\workSection{2021-2022}{Embedded System Developer}{Chiavari}{Hi-Lex Italy}
 	{
 		Microcontroller C programming for automotive and assembly line applications.
 		Core developer for Jeep Avenger (J516) window lifter project.
@@ -116,7 +116,7 @@
 	{
 		High performance C++ linear algebra. Optimization techniques. 
 		Publications: \textit{"Fast and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts"}. 
-		Teaching assistant in bachelor C++ programming courses. PhD interrupted at start of second year.
+		Teaching assistant in C++ programming courses. PhD interrupted at start of second year.
 	}
 
 	\vspace*{0.22cm}
@@ -170,7 +170,7 @@
 \sidebar{sideBarColor!25}
 \newpageheader{titleBackColor}{Luca}{Olivieri}{\faResistance \hspace{1mm} Software Developer}{white}
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+% Sidebar 2 
 \adjustbox{valign=t}{
     \begin{minipage}{7.3cm} 
     \vspace*{0.4cm} 
@@ -199,13 +199,12 @@
     \end{minipage}
 }
 \hfill
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%%%%%%%%%%%%
+% Main 2
 \adjustbox{valign=t}{%
 \begin{minipage}{11.3cm}
     \vspace*{0.4cm}
-
     % Information Technology Skills
-    \section*{{\faDesktop} Personal Projects}
+    \section*{{\faPiedPiperPp} Personal Projects}
     \personalProject{dumbPOS}
     {
         Most local culinary events have the need of a low cost 
@@ -231,7 +230,8 @@
     \vspace*{0.22cm}
     \personalProject{Self Door Opener}
     {
-        Embedded system connected to the Internet serving a login page. Upon a successful login, the front entrance of the building is opened. 
+        Embedded system connected to the Internet serving a login page. 
+        Upon a successful login, the front entrance of the building is opened. 
         
         This allows guest to enter by themselves or enables owners to simply 
         enter without searching  for the key. Complete with an administrator page and logs. 
@@ -246,29 +246,53 @@
         A comprehensive web page displays the paths logged on a map.
     }
 
-    \section*{{\aiOBP} About me}
-    Programming in general is my first interest, constantly challenging myself with new ideas and projects. 
-    My programming projects range from high level GUI application like an Android app (Olmaredo Stego) 
-    to embedded projects like an OBD2 telemetry interface for cars. Recently I've started to look into 
-    the Flutter framework, while at Hi-Lex I've been developing a fairly complex desktop application 
-    in Electron.
+    \vspace*{0.22cm}
+    \personalProject{Beating Sign}
+    {
+        Home decoration that lights up following the heart rhythm of the user on the previous day. 
+        A server retrieves heart rate information from Fitbit server using the OAuth2 protocol. 
+        The object is connected trough Wi-Fi and periodically asks for data to the server.
+    }	
+
+    \vspace*{0.22cm}
+    \personalProject{Olmaredo Stego}
+    {
+        Android application that implements image spread-spectrum steganography. 
+        In short it allows the user to embed text messages in photos 
+        that can be retrieved trough a password.
+        (Currently unavailable on Play Store)
+    }
+
+    \vspace*{0.22cm}
+    \personalProject{OBD2 Console}
+    {
+        An embedded system connects through bluetooth to an OBD2 adapter present on 
+        the car and displays information about the state of the engine on its screens.
+    }	
     
-    Electronics is my second interest, preferably digital than analog. More in detail, I developed 
-    several complex Arduino projects and experimented with the STM32 microcontroller ecosystem. 
-    At Hi-Lex the core product is based on a Melexis MCU, very challenging both from the point 
-    of view of the resources available and the development environment.
+    % \section*{{\aiOBP} About me}
+    % Programming in general is my first interest, constantly challenging myself with new ideas and projects. 
+    % My programming projects range from high level GUI application like an Android app (Olmaredo Stego) 
+    % to embedded projects like an OBD2 telemetry interface for cars. Recently I've started to look into 
+    % the Flutter framework, while at Hi-Lex I've been developing a fairly complex desktop application 
+    % in Electron.
     
-    During my internship at Mainsim I first learned about web developing, mainly back-end but a with 
-    a touch of front-end too. This new set of skills allowed me to dive into the IoT paradigm that 
-    was when the core focus of the work in Deloitte.
+    % Electronics is my second interest, preferably digital than analog. More in detail, I developed 
+    % several complex Arduino projects and experimented with the STM32 microcontroller ecosystem. 
+    % At Hi-Lex the core product is based on a Melexis MCU, very challenging both from the point 
+    % of view of the resources available and the development environment.
     
-    While in my PhD experience, although not completed, thought me about complex algebraic computation 
-    in Python and C++, up to that point my coding was approached in a results ASAP approach. 
-    My recent experience in the automotive industry instead made me completely re-think 
-    my day-to-day work and the implications of my coding for the company, forcing me to focus instead 
-    on the solidity of the product, shifting to a writing less code but of high quality.
+    % During my internship at Mainsim I first learned about web developing, mainly back-end but a with 
+    % a touch of front-end too. This new set of skills allowed me to dive into the IoT paradigm that 
+    % was when the core focus of the work in Deloitte.
     
-    Finally, I try to keep my pragmatic approach fresh by 
+    % While in my PhD experience, although not completed, thought me about complex algebraic computation 
+    % in Python and C++, up to that point my coding was approached in a results ASAP approach. 
+    % My recent experience in the automotive industry instead made me completely re-think 
+    % my day-to-day work and the implications of my coding for the company, forcing me to focus instead 
+    % on the solidity of the product, shifting to a writing less code but of high quality.
+    
+    % Finally, I try to keep my pragmatic approach fresh by 
 
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
