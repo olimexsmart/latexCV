@@ -30,14 +30,10 @@
 	% In brief
 	\ruleline{\textbf{About me}}
 	I like to constantly challenge myself with learning new skills 
-	and with personal projects, tech-related or not. 
-	
-	Programming is my first interest, while electronics is the second one, 
-    preferably digital than analog. 
-
-	My core value is respecting my work and the people I work with.  
+	and with personal projects, tech-related or not. Programming is my first interest, while electronics is the second one, 
+    preferably digital than analog. My core values are respecting my work and the people I work with.  
 	% Contact
-	\ruleline{\textbf{Contact}}
+	\ruleline{\textbf{Contacts}}
 	\begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
 	\matrix 
     [
@@ -54,6 +50,7 @@
         \node{\faGithub}; & \node{\href{https://github.com/olimexsmart}{GitHub: @olimexsmart}};\\
         \node{\faCar}; & \node{Driving License A and B};\\
         \node{\faQrcode}; & \node{\href{https://olimexsmart.it}{olimexsmart.it}};\\
+        \node{\faQrcode}; & \node{\href{https://sagrapos.it}{sagrapos.it}};\\
 	};
 	\end{tikzpicture}
     % QR Code
@@ -63,8 +60,8 @@
     % Professional Skills 
     \ruleline{\textbf{Skills}}
     \begin{center}
-        \cvTag{C}\cvTag{JS}\cvTag{Python}\cvTag{MatLab}\cvTag{C++}\cvTag{C\#}\cvTag{Git}
-		\cvTag{CAD (basic)}\cvTag{\LaTeX}
+        \cvTag{C}\cvTag{Angular}\cvTag{React}\cvTag{Python}\cvTag{C\#}\cvTag{Git}
+		\cvTag{CAD (basic)}\cvTag{\LaTeX}\cvTag{MatLab}
     \end{center}
 	% Languages
 	\ruleline{\textbf{Languages}}
@@ -93,6 +90,15 @@
 	% Work Experience
 	\vspace*{1cm}
 	\section*{{\faSuitcase} Work}
+
+    \vspace*{0.22cm}
+	\workSection{2023-now}{Senior Software Engineer}{Genova}{Freelance}
+	{
+		Worked for multiple clients delivering projects using a number of different technologies. 
+        These ranges from mobile apps for both Android and iOS, web apps, firmware projects, server deployment and managing for small teams. Worked on an industrial tool in C\# for streamlining product design and testing for a steel mill. Developed SagraPOS, a desktop application used in small food fairs and events for ticket printing. 
+	}   
+ 
+    \vspace*{0.22cm}
 	\workSection{2021-2022}{Embedded System Developer}{Chiavari}{Hi-Lex Italy}
 	{
 		Microcontroller C programming for automotive and assembly line applications.
@@ -134,6 +140,50 @@
 		One-page application in jQuery, PHP and MySQL. Both Windows and Unix servers.
 	}	
 
+
+
+\end{minipage}} %
+
+
+% Second Page
+\newpage
+
+\sidebar{sideBarColor!25}
+\newpageheader{titleBackColor}{Luca}{Olivieri}{\faResistance \hspace{1mm} Software Developer}{white}
+
+% Sidebar 2 
+\adjustbox{valign=t}{
+    \begin{minipage}{7.3cm} 
+    \vspace*{0.4cm} 
+        % I'd like to learn
+        \ruleline{\textbf{I'd like to know more about}}
+        \vspace*{-0.5cm}
+        \begin{center}
+            \cvTag{Rust}\cvTag{Embedded Linux}
+            \cvTag{Computer Vision} \cvTag{Machine Learning} \cvTag{Docker}
+            \cvTag{Power Electronics} \cvTag{Renewables} \cvTag{Advanced Networking}
+        \end{center}
+        % Other Interests
+        \ruleline{\textbf{Other Interests}}
+        \small
+        \begin{multicols}{2}
+            \begin{itemize} 
+                \item Photography
+                \item Furniture DIY
+                \item 3D printing
+                \item Motor Bikes
+                \item Soldering
+                \item Contemporary History 
+                \item Teaching
+        \end{itemize}
+        \end{multicols}
+    \end{minipage}
+}
+\hfill
+% Main 2
+\adjustbox{valign=t}{%
+\begin{minipage}{11.3cm}
+
 	% Education
 	\section*{{\faGraduationCap} Education}
 
@@ -161,63 +211,24 @@
 		Formulation of an a-priori routing algorithm for a satellite network. 
 		C++ with NS3 network simulation package on Unix environment.
 	}
-\end{minipage}} %
 
-
-% Second Page
-\newpage
-
-\sidebar{sideBarColor!25}
-\newpageheader{titleBackColor}{Luca}{Olivieri}{\faResistance \hspace{1mm} Software Developer}{white}
-
-% Sidebar 2 
-\adjustbox{valign=t}{
-    \begin{minipage}{7.3cm} 
-    \vspace*{0.4cm} 
-        % I'd like to learn
-        \ruleline{\textbf{I'd like to know more about}}
-        \vspace*{-0.5cm}
-        \begin{center}
-            \cvTag{Flutter}\cvTag{Go}\cvTag{Qt}\cvTag{Embedded Linux}
-            \cvTag{Computer Vision} \cvTag{Machine Learning} \cvTag{Docker}
-            \cvTag{Power Electronics} \cvTag{Renewables} \cvTag{Advanced Networking}
-        \end{center}
-        % Other Interests
-        \ruleline{\textbf{Other Interests}}
-        \small
-        \begin{multicols}{2}
-            \begin{itemize} 
-                \item Photography
-                \item Furniture DIY
-                \item 3D printing
-                \item Motor Bikes
-                \item Soldering
-                \item Contemporary History 
-                \item Teaching
-        \end{itemize}
-        \end{multicols}
-    \end{minipage}
-}
-\hfill
-% Main 2
-\adjustbox{valign=t}{%
-\begin{minipage}{11.3cm}
-    \vspace*{0.4cm}
+    %\vspace*{0.4cm}
     % Information Technology Skills
     \section*{{\faPiedPiperPp} Personal Projects}
-    \personalProject{dumbPOS}
+    \personalProject{SagraPOS}
     {
         Most local culinary events have the need of a low cost 
         and simple POS system. 
         
-        I'm currently building a solution based on an off-the-shelve 
-        receipt printer, a Flask (Python) backend and Flutter frontend. 
+        I've built a desktop app in Electron that interfaces with thermal printers that is designed to be easily deployed and used. 
+
+        It has been successfully used in numerous local events since 2021. 
     }
 	
     \vspace*{0.22cm}
     \personalProject{Proselide\\\textit{a startup}}
     {
-        I challenged my self to launch an idea and start a business. 
+        I challenged myself to launch an idea and start a business. 
         
         The problem I was trying to find a solution for was the monitoring 
         of parking spaces, to avoid the pollution, traffic and general stress 
@@ -233,7 +244,7 @@
         Embedded system connected to the Internet serving a login page. 
         Upon a successful login, the front entrance of the building is opened. 
         
-        This allows guest to enter by themselves or enables owners to simply 
+        This allows guests to enter by themselves or enables owners to simply 
         enter without searching  for the key. Complete with an administrator page and logs. 
         Home-built board.
     }
@@ -242,7 +253,7 @@
     \personalProject{Boat Tracker}
     {
         A self-contained embedded system used to log the position of a boat through GPS. 
-        Data is sent to a server using GSM/GPRS communication. 
+        Data is sent to a server using cellular service. 
         A comprehensive web page displays the paths logged on a map.
     }
 
@@ -260,14 +271,12 @@
         Android application that implements image spread-spectrum steganography. 
         In short it allows the user to embed text messages in photos 
         that can be retrieved trough a password.
-        (Currently unavailable on Play Store)
     }
 
     \vspace*{0.22cm}
     \personalProject{OBD2 Console}
     {
-        An embedded system connects through bluetooth to an OBD2 adapter present on 
-        the car and displays information about the state of the engine on its screens.
+        An embedded system that connects through BT to an OBD2 interface and displays information about the state of the engine.
     }	
     
     % \section*{{\aiOBP} About me}
